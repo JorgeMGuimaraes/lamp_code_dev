@@ -26,6 +26,7 @@ RUN apt-get update \
     #
 	# Install extra useful packages
 	&& apt-get -y install wget git pwgen zip \
+	#TODO: install screen
     # Install xdebug
     && yes | pecl install xdebug \
     && echo "zend_extension=$(find /usr/local/lib/php/extensions/ -name xdebug.so)" > /usr/local/etc/php/conf.d/xdebug.ini \
