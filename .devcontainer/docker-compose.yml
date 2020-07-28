@@ -6,8 +6,8 @@ services:
         volumes:
             - ../app:/workspace:cached
         ports:
-			# For use with PHP (e.g. `php -S localhost:8080`)
-			# TODO: may be 80
+            # For use with PHP (e.g. `php -S localhost:8080`)
+            # TODO: may be 80
             - "8080:8080"
         command: sleep infinity
     mariadb:
